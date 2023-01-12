@@ -97,6 +97,7 @@ li a {
     width: 85%;
 
     padding-left: 20px;
+    padding-right: 20px;
 
     grid-area: 1 / 2 / 2 / 10
 }
@@ -107,6 +108,8 @@ li a {
 
     align-items: center;
     justify-items: end;
+
+    padding-right: 16px;
 }
 
 .user {
@@ -118,25 +121,118 @@ li a {
     justify-self: center;
 }
 
-.user .pfp {
+.user .pfp-mini {
     height: 50px;
     width: 50px;
     border-radius: 100%;
 
-    background: rgb(226, 232, 240);
+    background: rgb(255, 238, 0);
+}
+
+.greeting,
+.username {
+    font-family: myRoboto;
+
+    text-decoration: none;
+    color: black;
 }
 
 .user .username {
     padding-left: 35px;
 
-    font-family: myRoboto;
-
-    text-decoration: none;
-    color: black;
     font-size: 1.25rem;
+}
+
+.header-3 {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    flex-shrink: 0;
+}
+
+.pfp-main {
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+
+    background: rgb(255, 238, 0);
+
+    margin-right: 25px;
+}
+
+.header-3 div .username {
+    font-size: 1.5rem;
+}
+
+.header-4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-right: 48px;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 50px;
+    border: none;
+    background-color:rgb(64, 147, 255);
+
+    font-family: myRoboto;
+    color: white;
 }
 
 .main-container {
     grid-area: 2 / 2 / 3 / 3;
     background-color: rgb(226, 232, 240);
+
+    padding: 32px 24px;
+
+    display: grid;
+    grid-template-columns: 3fr 1.25fr;
+    column-gap: 20px;
+
+    font-family: myRoboto;
+}
+
+.con-left {
+    display: grid;
+    grid-template-rows: 1.15rem 1fr;
+    gap: 12px;
+}
+
+.card-head {
+    font-size: 1.15rem;
+}
+
+.card-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.card {
+    background-color: white;
+
+    border-radius: 8px;
+    border-left: 8px solid rgb(255, 196, 0);
+}
+
+.con-right {
+    display: grid;
+    grid-template-rows: 1.15rem 1fr 1.15rem 1fr;
+    gap: 12px;
+}
+
+.ann-head,
+.trend-head {
+    font-size: 1.15rem;
+}
+
+.ann-card,
+.trend-card {
+    background-color: white;
+    border-radius: 8px;
+    border: none;
 }
