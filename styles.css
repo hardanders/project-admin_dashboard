@@ -141,7 +141,8 @@ li a {
 
 .ann-card-head,
 .greeting,
-.username {
+.username,
+.trending-profile {
     font-family: myRoboto;
 
     text-decoration: none;
@@ -232,6 +233,23 @@ li a {
     border-left: 8px solid rgb(255, 196, 0);
 
     box-shadow: 1px 2px 5px rgb(165, 164, 164);
+
+    padding: 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.proj-head {
+    padding-bottom: 8px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 28px;
 }
 
 .con-right {
@@ -278,4 +296,30 @@ li a {
 .separator {
     border-top: 1px solid darkgray;
     padding-top: 16px;
+}
+
+.trend-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 28px;
+}
+
+.trending-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-trait,
+.trend-user {
+    font-size: .85rem;
+}
+
+.proj-inner-text,
+.user-trait {
+    color:rgb(114, 114, 114);
+
+    font-family: thinRoboto;
 }
