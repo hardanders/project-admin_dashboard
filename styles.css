@@ -1,6 +1,37 @@
+@font-face {
+    font-family: myRoboto;
+    src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    
+    color: white;
+    font-size: 1.5rem;
+    font-family: myRoboto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+li a {
+    text-decoration: none;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    color: white;
 }
 
 #wrapper {
@@ -12,13 +43,46 @@
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
-    background-color: blue;
+    background-color: rgb(64, 147, 255);
+
+    padding: 25px;
+    display: grid;
+    align-content: flex-start;
+    grid-gap: 50px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: myRoboto;
 }
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
-    height: 20%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1.25fr;
 }
+
+/*
+.header-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.header-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.header-3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.header-4 {
+    grid-area: 2 / 2 / 3 / 3;
+} 
+*/
 
 .main-container {
     grid-area: 2 / 2 / 3 / 3;
