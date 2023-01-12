@@ -101,6 +101,41 @@ li a {
     grid-area: 1 / 2 / 2 / 10
 }
 
+.header-2 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    align-items: center;
+    justify-items: end;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+
+    padding-right: 30px;
+
+    justify-self: center;
+}
+
+.user .pfp {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+    background: rgb(226, 232, 240);
+}
+
+.user .username {
+    padding-left: 35px;
+
+    font-family: myRoboto;
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
 .main-container {
     grid-area: 2 / 2 / 3 / 3;
     background-color: rgb(226, 232, 240);
