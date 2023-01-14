@@ -1,0 +1,1 @@
+This project is display my understanding of HTML/CSS up to the Advanced HTML/CSS dashboard within the Node.JS/Javascript path of The Odin Project. This will utilize Grid and Flexbox, and will be more design oriented than functionality. Once completed, it will show that I am capable of following a design to generate a suitable webpage.
